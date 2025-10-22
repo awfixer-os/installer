@@ -1,1 +1,0 @@
-i18n.gettext('vanilla-first-setup', preset: 'glib')

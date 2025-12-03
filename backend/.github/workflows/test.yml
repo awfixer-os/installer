@@ -11,7 +11,7 @@ jobs:
     name: cargo fmt
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v6
       - uses: actions-rust-lang/setup-rust-toolchain@v1
         with:
           components: rustfmt
@@ -22,7 +22,7 @@ jobs:
     runs-on: ubuntu-latest
     container: ghcr.io/crystal-linux/crystal:latest
     steps:
-      - uses: actions/checkout@v1
+      - uses: actions/checkout@v6
       - run: |
           sudo pacman -Syu --needed --noconfirm
           sudo pacman -S --noconfirm rust

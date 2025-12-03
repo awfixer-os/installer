@@ -1,6 +1,20 @@
 version: 2
 updates:
   - package-ecosystem: "pip"
-    directory: "/"
+    directory: "/frontend/"
+    asignees:
+      - awfixer
     schedule:
-      interval: "weekly"
+      interval: "daily"
+  - package-ecosystem: "cargo"
+    directory: "/backend/"
+    asignees:
+      - awfixer
+    schedule:
+      interval: "daily"
+  - package-ecosystem: "pip"
+    directory: "/setup/"
+    asignees:
+      - awfixer
+    schedule:
+      interval: "daily"

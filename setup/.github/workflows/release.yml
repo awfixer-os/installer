@@ -39,7 +39,7 @@ jobs:
           run: |
             sha256sum vanilla-first-setup.deb >> checksums.txt
   
-        - uses: actions/upload-artifact@v4
+        - uses: actions/upload-artifact@v6
           with:
             name: first-setup
             path: |
@@ -61,7 +61,7 @@ jobs:
           fetch-depth: 0
 
       - name: Download Artifact
-        uses: actions/download-artifact@v4
+        uses: actions/download-artifact@v7
         with:
           name: first-setup
 

@@ -16,7 +16,7 @@ jobs:
         with:
           components: rustfmt
       - name: Format
-        uses: actions-rust-lang/rustfmt@v1.1.1
+        uses: actions-rust-lang/rustfmt@v1.1.2
   clippy:
     name: cargo clippy
     runs-on: ubuntu-latest
